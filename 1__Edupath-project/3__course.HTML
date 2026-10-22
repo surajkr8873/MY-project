@@ -1,314 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edupath-course</title>
+    <title>EduPath | Courses</title>
     <link rel="stylesheet" href="3.1__course.css">
-
 </head>
 <body>
 
-    <!--============================================================== navbar ======================================================================== -->
-    
-    <div class="navbar">
-        
-        <div class="logo">
-            <span>🎓</span>
-            <b><span>Edu</span>path</b>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="1__index.HTML" class="logo">🎓 EduPath</a>
+
+        <div class="nav-links">
+            <a href="1__index.HTML"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="3__course.HTML"><i class="fa-solid fa-book"></i> Courses</a>
+            <a href="roadmap.html"><i class="fa-solid fa-timeline"></i> Roadmap</a>
+            <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
         </div>
 
-        <nav class="nav-in">
-            <a href="1__index.HTML"><i class="fa-solid fa-house"></i>Home</a>
-            <a href="3__course.HTML"><i class="fa-solid fa-folder-open"></i>Course</a>
-            <a href="#"><i class="fa-solid fa-arrow-up"></i>Roadmap</a>
-            <a href="#"><i class="fa-solid fa-circle-info"></i>About</a>
-        </nav>
-
-        <div class="header-profile">
-
-            <a href="2__dashboard.HTML">Dashboard</a>
-
-        </div>
-
-    </div>
-    <!-- ============================================================ navbar complete ================================================================== -->
-
-    <!-- ============================================================= main-coontent ==================================================================== -->
-
-    <main id="page-course">
-        <!-- upper section -->
-
-        <section>
-
-            <h1 class="course-catalog">Course Catalog</h1>
-            
-            <p class="first-paragraph">
-                Explore a wide range of couse and start your learning jouney.
-            </p>
-
-        </section>
-
-        <!--============================================================= searcch-box ==================================================== -->
-
-        <div class="search-course">
-
-            <span><i class="fa-solid fa-magnifying-glass"></i></span>
-
-            <input
-                type="text"
-                placeholder="Search courses...">
-        </div>
-
-        <!-- ==================================================================== selector =================================================== -->
-
-        <div class="catagories">
-
-            <button class="catagory all"><b>All</b></button>
-            <button class="catagory"><b>Programming</b></button>
-            <button class="catagory"><b>Data Science</b></button>
-            <button class="catagory"><b>Design</b></button>
-            <button class="catagory"><b>Bussiness</b></button>
-
-        </div>
-
-        <!-- ===================================================================== course card ================================================== -->
-
-        <section class="course-container">
-
-            <!--================================================================= 1st card ============================================================-->
-
-            <div class="course-card">
-
-                <div class="course-icon">
-                    <i class="fa-brands fa-python"></i>
-                </div>
-
-                <h1>Python Programming</h1>
-
-                <p>
-                    Learn Python, build projects, solve problems, and unlock powerful technology skills.
-                </p>
-
-                <button class="course-btn">
-                    Get Started
-                </button>
-
-            </div>
-
-            <!--=============================================================== 2nd card ============================================================ -->
-
-            <div class="course-card">
-
-                <div class="course-icon">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-
-                <h1>Web Development</h1>
-
-                <p>
-                    Learn web development, create modern websites, master frontend skills, and build powerful digital experiences.
-                </p>
-
-                <button class="course-btn">
-                    Get Started
-                </button>
-
-            </div>
-
-            <!--============================================================== 3rd card ============================================================= -->
-
-            <div class="course-card">
-
-                <div class="course-icon">
-                    <i class="fa-solid fa-chart-column"></i>
-                </div>
-
-                <h1>
-                    Data Analysis
-                </h1>
-                
-                <p>
-                    Data analysis uses data, statistics, SQL, Python, Excel, and visualization tools to discover valuable insights.
-                </p>
-
-                <button class="course-btn">
-                    Get Started
-                </button>
-
-            </div>
-
-            <!--================================================================= 4th card =============================================================== -->
-
-            <div class="course-card">
-
-                <div class="course-icon">
-                    <i class="fa-solid fa-cash-register"></i>
-                </div>
-
-                <h1>
-                    Machine Learning
-                </h1>
-
-                <p>
-                    Machine Learning uses data, algorithms, and models to learn patterns, make predictions, and automate decisions.
-                </p>
-
-                <button class="course-btn">
-                    Get Started
-                </button>
-
-            </div>
-
-            <!--============================================================== 5th card ============================================================ -->
-
-            <div class="course-card">
-
-                <div class="course-icon">
-                    <i class="fa-brands fa-uikit"></i>
-                </div>
-
-                <h1>
-                    UI/UX Design
-                </h1>
-
-                <p>
-                    UI/UX design focuses on creating beautiful, intuitive, user-friendly interfaces and smooth digital experiences for everyone.
-                </p>
-
-                <button class="course-btn">
-                    Get Started
-                </button>
-
-            </div>
-
-            <!--================================================================= 6th card ================================================================ -->
-
-            </div>
-
-            <div class="course-card">
-
-                <div class="course-icon">
-                    <i class="fa-solid fa-robot"></i>
-                </div>
-
-                <h1>
-                    Ai & Robotics
-                </h1>
-
-                <p>
-                    AI and Robotics combine intelligent software, sensors, automation, and machines to create smart, autonomous systems.
-                </p>
-
-                <button class="course-btn">
-                    Get Started
-                </button>
-
-            </div>
-
-            <!--=============================================================== 7th card ================================================================= -->
-
-            <div class="course-card">
-                <div class="course-icon">
-                    <i class="fa-solid fa-laptop"></i>
-                </div>
-
-                <h1>
-                    Computer Language
-                </h1>
-
-                <p>
-                    Computer languages help humans communicate with computers, create software, automate tasks, and build digital solutions.
-                </p>
-
-                <button class="course-btn">
-                    Get Started
-                </button>
-
-            </div>
-
-            <!--=============================================================== explore button  ============================================================ -->
-
-            <div class="new-skill">
-                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-
-                <h1>Explore New Skill</h1>
-
-                <p><b>Discover more skills and courses.</b></p>
-
-                <button>Explore</button>
-            </div>
-
-        </section>
-
-        <div class="about-edupath-courses">
-            <h1>
-                EduPath Courses
-            </h1>
+        <a href="profile.html" class="login-btn"><i class="fa-solid fa-circle-user"></i> Profile</a>
+    </nav>
+
+    <!-- Courses Hero -->
+    <section class="courses-hero">
+        <div class="courses-hero-text">
+            <span class="tagline">Learn • Practice • Grow</span>
+
+            <h1>Explore Our <span>Courses</span></h1>
 
             <p>
-                EduPath Courses helps users discover and learn new skills through a variety of courses. Users can search for courses, explore categories, and choose subjects based on their interests and career goals. It offers courses in Python, Web Development, Data Analysis, Machine Learning, UI/UX Design, AI & Robotics, and more, helping learners build practical skills for their future.
+                Discover new skills and take the next step
+                in your career with EduPath.
             </p>
+        </div>
 
-            <hr>
+        <div class="courses-hero-image">
+            <img src="student2.png" alt="Online learning">
+        </div>
+    </section>
 
-            <ul>
-                <li><span>Explore Courses</span> – Discover courses across different skills and technologies.</li>
+    <!-- Popular Courses -->
+    <section class="all-courses">
+        <h2>Popular Courses</h2>
+        <p class="course-subtitle">
+            Choose your course and start learning today.
+        </p>
 
-                <li><span>Search Courses</span> – Quickly find a course using the search option.</li>
+        <div class="course-container">
 
-                <li><span>Filter by Category</span> – Explore courses by Programming, Data Science, Design, Business, etc.</li>
+            <div class="course-card">
+                <div class="course-icon">🐍</div>
+                <h3>Python Programming</h3>
+                <p>Learn Python from basic concepts to advanced programming.</p>
+                <a href="course-details.html">View Course →</a>
+            </div>
 
-                <li><span>Learn New Skills</span> – Develop skills like Python, Web Development, AI, Data Analysis, and more.</li>
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS and JavaScript to build websites.</p>
+                <a href="course-details.html">View Course →</a>
+            </div>
 
-                <li><span>Start Learning</span> – Choose a course and start your learning journey.</li>
+            <div class="course-card">
+                <div class="course-icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>Learn to understand data and find useful insights.</p>
+                <a href="course-details.html">View Course →</a>
+            </div>
 
-                <li><span>Build Practical Skills</span> – Learn concepts that can be applied to real-world projects.</li>
+            <div class="course-card">
+                <div class="course-icon">🤖</div>
+                <h3>Machine Learning</h3>
+                <p>Explore artificial intelligence and machine learning.</p>
+                <a href="course-details.html">View Course →</a>
+            </div>
 
-                <li><span>Discover New Skills</span> – Explore new career and technology fields.</li>
-            </ul>
+            <div class="course-card">
+                <div class="course-icon">🗄️</div>
+                <h3>Database & SQL</h3>
+                <p>Learn how to store, manage and retrieve data.</p>
+                <a href="course-details.html">View Course →</a>
+            </div>
 
+            <div class="course-card">
+                <div class="course-icon">🧠</div>
+                <h3>Data Structures & Algorithms</h3>
+                <p>Improve your logic and problem-solving skills.</p>
+                <a href="course-details.html">View Course →</a>
+            </div>
 
         </div>
-    
-        
-    </main>
+    </section>
 
-    <!-- ======================================= footer section ==================================== -->
-
+    <!-- Footer -->
     <footer class="footer">
-
-        <!--================== =====Left portion ==================== -->
-        
-        <div class="footer-left">
-            <h2>Edupath</h2>
-            <p><big>Learn-Grow-succeed</big></p>
+        <div>
+            <a href="index.html" class="footer-logo">🎓 EduPath</a>
+            <p>Learn Today. Build Tomorrow.</p>
         </div>
 
-        <!-- ================= center ==================== -->
-
-        <div class="contact-us">
-            <a href="">Contact Us</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="index.html#about">About</a>
         </div>
-        
 
-        <!-- ================ Right Portion ================= -->
-
-         <div class="social-link">
-            <a href="https://www.instagram.com/trade_addict_vlog?stkn=MXI1YzV1c3AxM2NybA=="><i class="fa-brands fa-instagram"></i></a>
-
-            <a href="https://www.linkedin.com/in/suraj-yadav-410208412?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin"></i></a>
-
-
-            <a href="https://youtube.com/@tradeaddict-vlog?si=GUXLOhuj889NG0ce"><i class="fa-brands fa-youtube"></i></a>
-
-         </div>
-
+        <p class="copyright">
+            © 2026 EduPath. All rights reserved.
+        </p>
     </footer>
 
 
 
-
-     <script src="https://kit.fontawesome.com/8c2282f953.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8c2282f953.js" crossorigin="anonymous"></script>
 </body>
 </html>

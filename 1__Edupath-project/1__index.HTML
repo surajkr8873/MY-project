@@ -1,127 +1,146 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edupath</title>
-    <link rel="stylesheet" href="1.1__index.css">
+    <title>EduPath | Learn and Grow</title>
 
+    <link rel="stylesheet" href="1.1__index.css">
 </head>
 <body>
-    
-    <div class="navbar">
-        
-        <div class="logo">
-            
-            <span>🎓</span>
-            <b><span>Edu</span>path</b>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="1__index.HTML" class="logo">🎓 EduPath</a>
+
+        <div class="nav-links">
+            <a href="1__index.HTML"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="3__course.HTML"><i class="fa-solid fa-book"></i> Courses</a>
+            <a href="roadmap.html"><i class="fa-solid fa-timeline"></i> Roadmap</a>
+            <a href="#about"><i class="fa-solid fa-circle-info"></i> About</a>
         </div>
 
-        <nav class="nav-in">
-            <a href="1__index.HTML"><i class="fa-solid fa-house"></i>Home</a>
-            <a href="3__course.HTML"><i class="fa-solid fa-folder-open"></i>Course</a>
-            <a href="#"><i class="fa-solid fa-arrow-up"></i>Roadmap</a>
-            <a href="#"><i class="fa-solid fa-circle-info"></i>About</a>
-        </nav>
+        <a href="#" class="login-btn">Login/signup</a>
+    </nav>
 
-        <div class="login-button">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tagline">Learn • Grow • Build Your Future</span>
 
-            <a href="#">login / sign in</a>
-
-        </div>
-
-    </div>
-    <!-- ======================== navbar complete ===================== -->
-
-    <!-- ========================== main content =================== -->
-    <main class="main-content">
-        <div>
-        
-            <h1>
-             <big>
-                    Learn Today,<br>
-                    Build Your <span style="color: blue;">Tommorow</span>
-                </big>
-            </h1>
+            <h1>Your Learning Journey <span>Starts Here</span></h1>
 
             <p>
-                Edupath helps you learn new skills,track your progress 
-                and build a better career with <br>
-                <span style="color: blue;">structured courses,roadmaps and resources.</span>
-         </p>
+                EduPath helps you learn new skills, explore career
+                paths and build a better future. Start your journey today!
+            </p>
 
-            <div class="get-started">
+            <div class="hero-buttons">
+                <a href="3__course.HTML" class="main-btn">
+                    Explore Courses →
+                </a>
 
-             <a href="#">Get Started</a>
-                    <button><b>Explore Courses</b></button>
-
-                 <!-- ====================heading content line================================= -->
-            
+                <a href="roadmap.html" class="outline-btn">
+                    View Roadmap
+                </a>
             </div>
-        
-            <div class="heading-content-line">
-                <h1>Education--</h1>
-                <h2>Shape Your Future</h2>
-                <br>
-                <br>
-                <span><b>Education</b></span> is more than collecting marks or earning a degree; it is the power to understand, create, and  grow.It open the door to new ideas, builds confidence,develops skills, and teaches us how to face real-world challenges.In a rapidly changing world, continuous learning helps us to stay prepared for new opportunities.The right education turns curiosity into knowledge, knowledge into skills, and skills into success. Learn with purpose, build with confidence, and createb a future you can be proud. 
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="student.png"
+                alt="Student learning on a laptop">
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="about">
+
+        <div class="feature">
+            <div class="feature-icon">📘</div>
+            <h3>Quality Courses</h3>
+            <p>Learn from useful resources and expert guidance.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🧭</div>
+            <h3>Career Roadmap</h3>
+            <p>Find a clear path for your future goals.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📊</div>
+            <h3>Track Progress</h3>
+            <p>Keep an eye on your learning journey.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">👥</div>
+            <h3>Supportive Community</h3>
+            <p>Learn together and grow together.</p>
+        </div>
+
+    </section>
+
+    <!-- Popular Courses -->
+    <section class="courses">
+        <div class="section-heading">
+            <div>
+                <h2>Popular Courses</h2>
+                <p>Explore our popular courses and start learning today.</p>
             </div>
-            <br>
 
-            <div class="student-picture">
+            <a href="3__course.HTML" class="view-all">View All Courses →</a>
+        </div>
 
-                <img src="student-picture.png" alt="">
-                <div class="student-content"><h1 class="why-edupath ?">Why Edupath ?</h1>
+        <div class="course-container">
 
-                    <p>
-                        EduPath is designed to make <b>learning simple, structured, and practical</b> . It helps students choose the right courses, follow  clear career roadmaps, track their progress, and build useful skills     step by step. Whether you are starting from zero or improving your  existing skills, EduPath gives you the guidance and resources you need   to keep learning and moving forward.
-                    </p>
+            <div class="course-card">
+                <div class="course-icon">🐍</div>
+                <h3>Python Programming</h3>
+                <p>Learn Python from basics to advanced.</p>
+                <a href="courses.html">Learn More →</a>
+            </div>
 
-                    <ul class="list">
-                        <li><a href="3__course.HTML">Course</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Roadmap</a></li>
-                        <li><a href="#">Progress</a></li>
-                        <li><a href="#">Your Learning</a></li>
-                        <li><a href="#">Certificates</a></li>
-                    </ul>
-            
-                </div>
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Build websites with HTML, CSS and JavaScript.</p>
+                <a href="courses.html">Learn More →</a>
+            </div>
 
+            <div class="course-card">
+                <div class="course-icon">📈</div>
+                <h3>Data Analysis</h3>
+                <p>Explore data and discover useful insights.</p>
+                <a href="courses.html">Learn More →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🤖</div>
+                <h3>Machine Learning</h3>
+                <p>Explore AI concepts and smart technology.</p>
+                <a href="courses.html">Learn More →</a>
             </div>
 
         </div>
+    </section>
 
-    </main>
-
+    <!-- Footer -->
     <footer class="footer">
-
-        <!--================== =====Left portion ==================== -->
-        
-        <div class="footer-left">
-            <h2>Edupath</h2>
-            <p><big>Learn-Grow-succeed</big></p>
+        <div>
+            <a href="index.html" class="footer-logo">🎓 EduPath</a>
+            <p>Learn Today. Build Tomorrow.</p>
         </div>
 
-        <!-- ================= center ==================== -->
-
-        <div class="contact-us">
-            <a href="">Contact Us</a>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="roadmap.html">Roadmap</a>
         </div>
-        
 
-        <!-- ================ Right Portion ================= -->
-
-         <div class="social-link">
-            <a href="https://www.instagram.com/trade_addict_vlog?stkn=MXI1YzV1c3AxM2NybA=="><i class="fa-brands fa-instagram"></i></a>
-
-            <a href="https://www.linkedin.com/in/suraj-yadav-410208412?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fa-brands fa-linkedin"></i></a>
-
-
-            <a href="https://youtube.com/@tradeaddict-vlog?si=GUXLOhuj889NG0ce"><i class="fa-brands fa-youtube"></i></a>
-
-         </div>
-
+        <p class="copyright">© 2026 EduPath. All rights reserved.</p>
     </footer>
 
 
