@@ -1,0 +1,769 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | EduPath</title>
+
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a href="index.html" class="logo">🎓 EduPath</a>
+
+        <p class="menu-heading">MAIN MENU</p>
+
+        <nav class="sidebar-links">
+            <a href="dashboard.html">🏠<span>Dashboard</span></a>
+            <a href="courses.html">📚<span>Courses</span></a>
+            <a href="my-learning.html">🎯<span>My Learning</span></a>
+            <a href="roadmap.html">🗺️<span>Roadmap</span></a>
+            <a href="profile.html">👤<span>Profile</span></a>
+        </nav>
+
+        <p class="menu-heading">PREFERENCES</p>
+
+        <nav class="sidebar-links">
+            <a href="settings.html" class="active">⚙ <span>Settings</span></a>
+            <a href="privacy-security.html">🔒<span>Privacy & Security</span></a>
+            <a href="#support">❓<span>Help & Support</span></a>
+        </nav>
+
+        <a href="login.html" class="logout">↪ Logout</a>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="page-header">
+            <div>
+                <p class="eyebrow">YOUR ACCOUNT</p>
+                <h1>Settings</h1>
+                <p class="header-description">
+                    Manage your account and personalize your learning experience.
+                </p>
+            </div>
+
+            <a href="profile.html" class="profile-shortcut">
+                <span class="small-avatar">S</span>
+                <span>My Profile</span>
+            </a>
+        </header>
+
+
+        <!-- PAGE LAYOUT -->
+        <div class="settings-layout">
+
+            <!-- SETTINGS NAVIGATION -->
+            <nav class="settings-navigation">
+                <p class="navigation-title">SETTINGS MENU</p>
+
+                <a href="#account" class="navigation-link active">
+                    <span class="nav-icon">♙</span> Account
+                </a>
+
+                <a href="#notifications" class="navigation-link">
+                    <span class="nav-icon">♧</span> Notifications
+                </a>
+
+                <a href="#appearance" class="navigation-link">
+                    <span class="nav-icon">🎨</span> Appearance
+                </a>
+
+                <a href="#language" class="navigation-link">
+                    <span class="nav-icon">◎</span> Language
+                </a>
+
+                <a href="#privacy" class="navigation-link">
+                    <span class="nav-icon">🔒</span> Privacy & Security
+                </a>
+
+                <a href="#connected" class="navigation-link">
+                    <span class="nav-icon">🔗</span> Connected Accounts
+                </a>
+            </nav>
+
+
+            <!-- SETTINGS SECTIONS -->
+            <div class="settings-sections">
+
+                <!-- ACCOUNT SETTINGS -->
+                <section class="settings-card" id="account">
+
+                    <div class="section-header">
+                        <div class="section-heading">
+                            <div class="section-icon">♙</div>
+                            <div>
+                                <h2>Account Settings</h2>
+                                <p>Manage your personal information.</p>
+                            </div>
+                        </div>
+
+                        <button type="button" class="edit-button" id="editButton">
+                            ✎ Edit
+                        </button>
+                    </div>
+
+                    <!-- PROFILE PHOTO -->
+                    <div class="photo-section">
+                        <div class="profile-photo">
+                            <img
+                                id="profileImage"
+                                src="https://avatars.githubusercontent.com/u/312699934?v=4"
+                                alt="Profile photo"
+                            >
+                            <span id="photoFallback">S</span>
+                        </div>
+
+                        <div class="photo-details">
+                            <h3>Profile Photo</h3>
+                            <p>Personalize your EduPath account.</p>
+
+                            <label for="photoInput" class="photo-edit" id="photoEditLabel">
+                                Change Photo
+                            </label>
+
+                            <input
+                                type="file"
+                                id="photoInput"
+                                accept="image/*"
+                                hidden
+                                disabled
+                            >
+                        </div>
+                    </div>
+
+                    <!-- ACCOUNT FORM -->
+                    <form id="accountForm">
+
+                        <div class="form-grid">
+
+                            <div class="form-field">
+                                <label for="fullName">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    value="Suraj Yadav"
+                                    disabled
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    value="suraj@example.com"
+                                    disabled
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="username">Username</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    placeholder="Choose a username"
+                                    value="suraj_yadav"
+                                    disabled
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="memberType">Account Type</label>
+                                <input
+                                    type="text"
+                                    id="memberType"
+                                    value="Student Account"
+                                    disabled
+                                >
+                            </div>
+
+                        </div>
+
+                        <!-- ONLY VISIBLE WHILE EDITING -->
+                        <div class="edit-actions" id="editActions" hidden>
+                            <button type="button" class="cancel-button" id="cancelButton">
+                                Cancel
+                            </button>
+
+                            <button type="submit" class="apply-button">
+                                Apply Changes
+                            </button>
+                        </div>
+
+                        <p class="form-message" id="formMessage" aria-live="polite"></p>
+
+                    </form>
+
+                    <p class="small-note">
+                        This demo saves account details in your current browser.
+                        A real account system requires a backend.
+                    </p>
+
+                </section>
+
+
+                <!-- NOTIFICATIONS -->
+                <section class="settings-card" id="notifications">
+
+                    <div class="section-header">
+                        <div class="section-heading">
+                            <div class="section-icon">♧</div>
+                            <div>
+                                <h2>Notifications</h2>
+                                <p>Choose which updates you want to receive.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol">📚</div>
+                        <div class="setting-info">
+                            <h3>Course Updates</h3>
+                            <p>New courses, lessons and learning materials.</p>
+                        </div>
+
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="toggle-track"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol">💡</div>
+                        <div class="setting-info">
+                            <h3>Learning Reminders</h3>
+                            <p>Reminders to continue your learning journey.</p>
+                        </div>
+
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="toggle-track"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol">🏆</div>
+                        <div class="setting-info">
+                            <h3>Achievements</h3>
+                            <p>Updates about milestones and completed courses.</p>
+                        </div>
+
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="toggle-track"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol">📩</div>
+                        <div class="setting-info">
+                            <h3>Offers & Announcements</h3>
+                            <p>News about special offers and EduPath updates.</p>
+                        </div>
+
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="toggle-track"></span>
+                        </label>
+                    </div>
+
+                </section>
+
+
+                <!-- APPEARANCE -->
+                <section class="settings-card" id="appearance">
+
+                    <div class="section-header">
+                        <div class="section-heading">
+                            <div class="section-icon">🎨</div>
+                            <div>
+                                <h2>Appearance</h2>
+                                <p>Choose how EduPath looks on your device.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="field-label">Choose your theme</p>
+
+                    <div class="theme-grid">
+
+                        <button type="button" class="theme-card active"
+                                data-theme="light">
+                            <span class="theme-preview light-preview">
+                                <span></span><span></span><span></span>
+                            </span>
+                            <span class="theme-name">☀️ Light</span>
+                            <span class="theme-description">Clean and bright</span>
+                        </button>
+
+                        <button type="button" class="theme-card"
+                                data-theme="dark">
+                            <span class="theme-preview dark-preview">
+                                <span></span><span></span><span></span>
+                            </span>
+                            <span class="theme-name">🌙 Dark</span>
+                            <span class="theme-description">Easy on the eyes</span>
+                        </button>
+
+                        <button type="button" class="theme-card"
+                                data-theme="system">
+                            <span class="theme-preview system-preview">
+                                <span></span><span></span><span></span>
+                            </span>
+                            <span class="theme-name">🖥️ System</span>
+                            <span class="theme-description">Follow your device</span>
+                        </button>
+
+                    </div>
+
+                    <p class="small-note">
+                        Your theme preference is remembered in this browser.
+                    </p>
+
+                </section>
+
+
+                <!-- LANGUAGE -->
+                <section class="settings-card" id="language">
+
+                    <div class="section-header">
+                        <div class="section-heading">
+                            <div class="section-icon">◎</div>
+                            <div>
+                                <h2>Language</h2>
+                                <p>Choose your preferred display language.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="languageSelect">Website Language</label>
+
+                        <select id="languageSelect">
+                            <option value="en">English</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </div>
+
+                    <p class="small-note">
+                        Language selection is a visual preference for now;
+                        automatic website translation is not included.
+                    </p>
+
+                </section>
+
+
+                <!-- PRIVACY -->
+                <section class="settings-card" id="privacy">
+
+                    <div class="section-header">
+                        <div class="section-heading">
+                            <div class="section-icon">🔒</div>
+                            <div>
+                                <h2>Privacy & Security</h2>
+                                <p>Review your account security preferences.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol">🔑</div>
+                        <div class="setting-info">
+                            <h3>Password</h3>
+                            <p>Update your account password.</p>
+                        </div>
+                        <a href="forgot-password.html" class="row-link">
+                            Manage →
+                        </a>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol">👁️</div>
+                        <div class="setting-info">
+                            <h3>Public Profile</h3>
+                            <p>Allow other learners to view your profile.</p>
+                        </div>
+
+                        <label class="toggle">
+                            <input type="checkbox" id="publicProfile">
+                            <span class="toggle-track"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol">🛡️</div>
+                        <div class="setting-info">
+                            <h3>Two-Factor Authentication</h3>
+                            <p>Add an extra layer of account protection.</p>
+                        </div>
+                        <span class="status-pill">Not configured</span>
+                    </div>
+
+                </section>
+
+
+                <!-- CONNECTED ACCOUNTS -->
+                <section class="settings-card" id="connected">
+
+                    <div class="section-header">
+                        <div class="section-heading">
+                            <div class="section-icon">🔗</div>
+                            <div>
+                                <h2>Connected Accounts</h2>
+                                <p>Manage your external account connections.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol brand-symbol">G</div>
+                        <div class="setting-info">
+                            <h3>Google</h3>
+                            <p>Sign-in and account connection.</p>
+                        </div>
+                        <span class="status-pill">Not connected</span>
+                    </div>
+
+                    <div class="setting-row">
+                        <div class="setting-symbol brand-symbol">GH</div>
+                        <div class="setting-info">
+                            <h3>GitHub</h3>
+                            <p>Connect your coding profile.</p>
+                        </div>
+                        <span class="status-pill">Not connected</span>
+                    </div>
+
+                </section>
+
+
+                <!-- SUPPORT -->
+                <section class="support-card" id="support">
+                    <div>
+                        <h2>Need a little help?</h2>
+                        <p>Have a question about your EduPath account?</p>
+                    </div>
+
+                    <a href="mailto:support@example.com">Contact Support ↗</a>
+                </section>
+
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="page-footer">
+            <a href="index.html" class="footer-logo">🎓 EduPath</a>
+            <p>Learn something new every day.</p>
+            <p>© 2026 EduPath. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+
+    <!-- PAGE FUNCTIONALITY -->
+    <script>
+        // ACCOUNT EDITING
+        const accountForm = document.getElementById("accountForm");
+        const editButton = document.getElementById("editButton");
+        const cancelButton = document.getElementById("cancelButton");
+        const editActions = document.getElementById("editActions");
+        const formMessage = document.getElementById("formMessage");
+
+        const editableFields = [
+            document.getElementById("fullName"),
+            document.getElementById("email"),
+            document.getElementById("username")
+        ];
+
+        const photoInput = document.getElementById("photoInput");
+        const profileImage = document.getElementById("profileImage");
+        const photoFallback = document.getElementById("photoFallback");
+        const photoEditLabel = document.getElementById("photoEditLabel");
+
+        let originalValues = {};
+        let originalPhoto = "";
+        let editing = false;
+
+        function saveAccountLocally() {
+            const account = {
+                fullName: document.getElementById("fullName").value,
+                email: document.getElementById("email").value,
+                username: document.getElementById("username").value
+            };
+
+            try {
+                localStorage.setItem("edupath-account", JSON.stringify(account));
+            } catch (error) {
+                formMessage.textContent =
+                    "Browser storage is unavailable. Changes may not persist.";
+            }
+        }
+
+        function loadAccountLocally() {
+            try {
+                const saved = JSON.parse(
+                    localStorage.getItem("edupath-account") || "null"
+                );
+
+                if (!saved) return;
+
+                document.getElementById("fullName").value =
+                    saved.fullName || "Suraj Yadav";
+
+                document.getElementById("email").value =
+                    saved.email || "suraj@example.com";
+
+                document.getElementById("username").value =
+                    saved.username || "suraj_yadav";
+
+            } catch (error) {
+                // Use default demo values if storage is unavailable.
+            }
+        }
+
+        function startEditing() {
+            editing = true;
+            formMessage.textContent = "";
+
+            originalValues = {};
+            editableFields.forEach(function (field) {
+                originalValues[field.id] = field.value;
+                field.disabled = false;
+            });
+
+            originalPhoto = profileImage.src;
+
+            editButton.hidden = true;
+            editActions.hidden = false;
+            photoInput.disabled = false;
+            photoEditLabel.hidden = false;
+
+            editableFields[0].focus();
+        }
+
+        function cancelEditing() {
+            editableFields.forEach(function (field) {
+                field.value = originalValues[field.id];
+                field.disabled = true;
+            });
+
+            profileImage.src = originalPhoto;
+            updatePhotoFallback();
+
+            photoInput.value = "";
+            photoInput.disabled = true;
+            photoEditLabel.hidden = true;
+
+            editing = false;
+            editButton.hidden = false;
+            editActions.hidden = true;
+            formMessage.textContent = "";
+        }
+
+        function updatePhotoFallback() {
+            if (
+                !profileImage.getAttribute("src") ||
+                profileImage.style.display === "none"
+            ) {
+                profileImage.style.display = "none";
+                photoFallback.style.display = "flex";
+            } else {
+                profileImage.style.display = "block";
+                photoFallback.style.display = "none";
+            }
+        }
+
+        editButton.addEventListener("click", startEditing);
+        cancelButton.addEventListener("click", cancelEditing);
+
+        accountForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!editing) return;
+
+            if (!accountForm.checkValidity()) {
+                accountForm.reportValidity();
+                return;
+            }
+
+            editableFields.forEach(function (field) {
+                field.disabled = true;
+            });
+
+            photoInput.disabled = true;
+            photoEditLabel.hidden = true;
+
+            saveAccountLocally();
+
+            editing = false;
+            editButton.hidden = false;
+            editActions.hidden = true;
+            formMessage.textContent = "Your changes have been applied.";
+        });
+
+        // PROFILE PHOTO PREVIEW
+        photoInput.addEventListener("change", function () {
+            const file = this.files[0];
+
+            if (!file || !file.type.startsWith("image/")) return;
+
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+                profileImage.src = event.target.result;
+                profileImage.style.display = "block";
+                photoFallback.style.display = "none";
+            };
+
+            reader.readAsDataURL(file);
+        });
+
+        profileImage.addEventListener("error", function () {
+            profileImage.style.display = "none";
+            photoFallback.style.display = "flex";
+        });
+
+        // Load saved demo account details
+        loadAccountLocally();
+
+        // THEME: SHARED BETWEEN PAGES USING theme.css
+        const themeCards = document.querySelectorAll(".theme-card");
+
+        function applyTheme(theme) {
+            let actualTheme = theme;
+
+            if (theme === "system") {
+                actualTheme = window.matchMedia(
+                    "(prefers-color-scheme: dark)"
+                ).matches ? "dark" : "light";
+            }
+
+            document.documentElement.setAttribute("data-theme", actualTheme);
+
+            themeCards.forEach(function (card) {
+                const selected = card.dataset.theme === theme;
+                card.classList.toggle("active", selected);
+                card.setAttribute("aria-pressed", selected);
+            });
+
+            try {
+                localStorage.setItem("edupath-theme", theme);
+            } catch (error) {
+                // Theme still applies to this page.
+            }
+        }
+
+        let initialTheme = "light";
+
+        try {
+            initialTheme = localStorage.getItem("edupath-theme") || "light";
+        } catch (error) {
+            initialTheme = "light";
+        }
+
+        applyTheme(initialTheme);
+
+        themeCards.forEach(function (card) {
+            card.addEventListener("click", function () {
+                applyTheme(this.dataset.theme);
+            });
+        });
+
+        window.matchMedia("(prefers-color-scheme: dark)")
+            .addEventListener("change", function () {
+                let currentTheme = "light";
+
+                try {
+                    currentTheme =
+                        localStorage.getItem("edupath-theme") || "light";
+                } catch (error) {
+                    currentTheme = "light";
+                }
+
+                if (currentTheme === "system") {
+                    applyTheme("system");
+                }
+            });
+
+        // LANGUAGE PREFERENCE DEMO
+        const languageSelect = document.getElementById("languageSelect");
+
+        try {
+            languageSelect.value =
+                localStorage.getItem("edupath-language") || "en";
+        } catch (error) {
+            languageSelect.value = "en";
+        }
+
+        languageSelect.addEventListener("change", function () {
+            try {
+                localStorage.setItem("edupath-language", this.value);
+            } catch (error) {
+                // Preference can still be selected for this session.
+            }
+        });
+
+        // PUBLIC PROFILE PREFERENCE DEMO
+        const publicProfile = document.getElementById("publicProfile");
+
+        try {
+            publicProfile.checked =
+                localStorage.getItem("edupath-public-profile") === "true";
+        } catch (error) {
+            publicProfile.checked = false;
+        }
+
+        publicProfile.addEventListener("change", function () {
+            try {
+                localStorage.setItem(
+                    "edupath-public-profile",
+                    String(this.checked)
+                );
+            } catch (error) {
+                // Preference remains active for the current page.
+            }
+        });
+
+        // NOTIFICATION PREFERENCES
+        document.querySelectorAll("#notifications .toggle input")
+            .forEach(function (toggle, index) {
+                const key = "edupath-notification-" + index;
+
+                try {
+                    const saved = localStorage.getItem(key);
+                    if (saved !== null) {
+                        toggle.checked = saved === "true";
+                    }
+                } catch (error) {
+                    // Toggles default to ON.
+                }
+
+                toggle.addEventListener("change", function () {
+                    try {
+                        localStorage.setItem(key, String(this.checked));
+                    } catch (error) {
+                        // Toggle still works for this page.
+                    }
+                });
+            });
+    </script>
+
+</body>
+</html>

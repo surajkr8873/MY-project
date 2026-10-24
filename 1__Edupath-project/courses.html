@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Courses | EduPath</title>
+    <link rel="stylesheet" href="courses.css">
+
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <a href="1__index.HTML" class="logo">🎓 EduPath</a>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html">🏠 Dashboard</a>
+            <a href="courses.html" class="active">📚 Courses</a>
+            <a href="my-learning.html">🎯 My Learning</a>
+            <a href="roadmap.html">🗺️ Roadmap</a>
+            <a href="profile.html">👤 Profile</a>
+        </nav>
+
+        <p class="menu-title">PREFERENCES</p>
+
+        <nav class="sidebar-nav">
+            <a href="settings.html">⚙️ Settings</a>
+            <a href="privacy-security.html">🔒 Privacy & Security</a>
+            <a href="#">❓ Help & Support</a>
+        </nav>
+
+        <a href="login.html" class="logout-link">↪ Logout</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="topbar">
+            <div>
+                <span class="eyebrow">LEARN • PRACTICE • GROW</span>
+                <h1>Explore Courses</h1>
+                <p>Choose your career path and learn every skill step by step.</p>
+            </div>
+
+            <a href="profile.html" class="profile-link">👤 My Profile</a>
+        </header>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <span>🔍</span>
+            <input
+                type="search"
+                id="courseSearch"
+                placeholder="Search Python, HTML, DSA, UI/UX..."
+                aria-label="Search courses and topics"
+            >
+        </div>
+
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+
+        <!-- HERO -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <span class="hero-tag">YOUR FUTURE STARTS HERE</span>
+                <h2>Learn Skills.<br>Build Projects. <span>Grow Your Career.</span></h2>
+                <p>
+                    Explore structured learning paths in development,
+                    programming, design, data and artificial intelligence.
+                    Start with the basics and keep building.
+                </p>
+
+                <a href="#career-paths" class="primary-btn">
+                    Explore Learning Paths →
+                </a>
+            </div>
+
+            <div class="hero-art" aria-hidden="true">
+                <div class="art-circle">🎓</div>
+                <div class="art-card art-card-one">💻 Coding</div>
+                <div class="art-card art-card-two">🚀 Your Future</div>
+                <div class="art-card art-card-three">✨ New Skills</div>
+            </div>
+        </section>
+
+        <!-- CAREER PATHS -->
+        <div class="section-intro" id="career-paths">
+            <div>
+                <h2>Choose Your Career Path</h2>
+                <p>Follow the topics in order, or explore any topic you need.</p>
+            </div>
+        </div>
+
+        <!-- 1. FRONTEND -->
+        <section class="course-section" id="frontend" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol purple">🌐</div>
+                <div>
+                    <h2>Frontend Development</h2>
+                    <p>Build the visual and interactive parts of websites.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=html" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>HTML</h3>
+                        <p>Elements, forms, semantic HTML, tables and accessibility.</p>
+                        <span class="skill-tag">Beginner · Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=css" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>CSS</h3>
+                        <p>Colors, typography, box model, Flexbox, Grid and responsive design.</p>
+                        <span class="skill-tag">Beginner · Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=javascript" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>JavaScript</h3>
+                        <p>Variables, functions, arrays, objects, DOM, events and async JavaScript.</p>
+                        <span class="skill-tag">Core Language · Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=git-github" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>Git & GitHub</h3>
+                        <p>Version control, commits, branches and collaboration.</p>
+                        <span class="skill-tag">Developer Tools · Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=css-frameworks" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>Bootstrap & Tailwind CSS</h3>
+                        <p>Create responsive interfaces using CSS frameworks.</p>
+                        <span class="skill-tag">Frameworks · Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=react" class="path-item">
+                    <span class="step-number">06</span>
+                    <div class="step-info">
+                        <h3>React</h3>
+                        <p>Components, props, state, hooks and routing.</p>
+                        <span class="skill-tag">Frontend Library · Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=frontend-projects" class="path-item">
+                    <span class="step-number">07</span>
+                    <div class="step-info">
+                        <h3>Frontend Projects</h3>
+                        <p>Build a portfolio, landing page and interactive dashboard.</p>
+                        <span class="skill-tag">Hands-on Projects →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. BACKEND -->
+        <section class="course-section" id="backend" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol blue">⚙️</div>
+                <div>
+                    <h2>Backend Development</h2>
+                    <p>Learn server-side programming, APIs and databases.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=backend-basics" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>Programming Fundamentals</h3>
+                        <p>Logic, variables, conditions, loops, functions and data structures.</p>
+                        <span class="skill-tag">Foundation →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=python" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>Python Programming</h3>
+                        <p>Syntax, functions, OOP, modules, exceptions and file handling.</p>
+                        <span class="skill-tag">Language →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=sql" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>SQL & Databases</h3>
+                        <p>Queries, joins, relationships, CRUD and database design.</p>
+                        <span class="skill-tag">Database →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=backend-frameworks" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>Django, FastAPI & Node.js</h3>
+                        <p>Learn backend frameworks and choose a stack for your projects.</p>
+                        <span class="skill-tag">Frameworks →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=apis" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>REST APIs & JSON</h3>
+                        <p>HTTP methods, requests, responses and API integration.</p>
+                        <span class="skill-tag">Web Services →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=authentication" class="path-item">
+                    <span class="step-number">06</span>
+                    <div class="step-info">
+                        <h3>Authentication & Security</h3>
+                        <p>Sessions, password protection, permissions and validation.</p>
+                        <span class="skill-tag">Security →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=backend-deployment" class="path-item">
+                    <span class="step-number">07</span>
+                    <div class="step-info">
+                        <h3>Testing & Deployment</h3>
+                        <p>Test backend code, configure environments and deploy applications.</p>
+                        <span class="skill-tag">Production →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. DSA AFTER BACKEND -->
+        <section class="course-section" id="dsa" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol orange">🧠</div>
+                <div>
+                    <h2>Data Structures & Algorithms (DSA)</h2>
+                    <p>Improve problem-solving skills using your preferred language.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=dsa-basics" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>DSA Fundamentals & Big O</h3>
+                        <p>Time complexity, space complexity and algorithm analysis.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=arrays-strings" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>Arrays & Strings</h3>
+                        <p>Traversal, searching, two pointers and common problems.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=linked-lists" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>Linked Lists</h3>
+                        <p>Singly linked lists, doubly linked lists and operations.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=stacks-queues" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>Stacks & Queues</h3>
+                        <p>LIFO, FIFO, implementation and applications.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=recursion" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>Recursion & Backtracking</h3>
+                        <p>Base cases, recursive calls and backtracking problems.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=trees-graphs" class="path-item">
+                    <span class="step-number">06</span>
+                    <div class="step-info">
+                        <h3>Trees & Graphs</h3>
+                        <p>Binary trees, BST, BFS, DFS and graph fundamentals.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=sorting-searching" class="path-item">
+                    <span class="step-number">07</span>
+                    <div class="step-info">
+                        <h3>Searching & Sorting</h3>
+                        <p>Linear search, binary search and sorting algorithms.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=dynamic-programming" class="path-item">
+                    <span class="step-number">08</span>
+                    <div class="step-info">
+                        <h3>Greedy Algorithms & Dynamic Programming</h3>
+                        <p>Learn algorithmic strategies and solve advanced problems.</p>
+                        <span class="skill-tag">Advanced →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. PROGRAMMING LANGUAGES -->
+        <section class="course-section" id="languages" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol purple">💻</div>
+                <div>
+                    <h2>Programming Languages</h2>
+                    <p>Choose a language to explore its lessons and projects.</p>
+                </div>
+            </div>
+
+            <div class="language-grid">
+                <a href="course-details.html?course=python" class="language-card">
+                    <span class="language-icon">🐍</span>
+                    <h3>Python</h3>
+                    <p>Automation, backend and AI</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=java" class="language-card">
+                    <span class="language-icon">☕</span>
+                    <h3>Java</h3>
+                    <p>OOP, applications and DSA</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=c" class="language-card">
+                    <span class="language-icon">🔧</span>
+                    <h3>C</h3>
+                    <p>Programming fundamentals</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=cpp" class="language-card">
+                    <span class="language-icon">⚙️</span>
+                    <h3>C++</h3>
+                    <p>OOP, STL and DSA</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=javascript" class="language-card">
+                    <span class="language-icon">🌐</span>
+                    <h3>JavaScript</h3>
+                    <p>Web development</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=typescript" class="language-card">
+                    <span class="language-icon">🔷</span>
+                    <h3>TypeScript</h3>
+                    <p>Typed JavaScript</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=csharp" class="language-card">
+                    <span class="language-icon">🟣</span>
+                    <h3>C#</h3>
+                    <p>.NET and application development</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=php" class="language-card">
+                    <span class="language-icon">🐘</span>
+                    <h3>PHP</h3>
+                    <p>Server-side web development</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=go" class="language-card">
+                    <span class="language-icon">🚀</span>
+                    <h3>Go</h3>
+                    <p>Backend and cloud systems</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=rust" class="language-card">
+                    <span class="language-icon">🦀</span>
+                    <h3>Rust</h3>
+                    <p>Systems programming</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=kotlin" class="language-card">
+                    <span class="language-icon">📱</span>
+                    <h3>Kotlin</h3>
+                    <p>Android development</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=swift" class="language-card">
+                    <span class="language-icon">🍎</span>
+                    <h3>Swift</h3>
+                    <p>Apple app development</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=sql" class="language-card">
+                    <span class="language-icon">🗄️</span>
+                    <h3>SQL</h3>
+                    <p>Query and manage databases</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=r" class="language-card">
+                    <span class="language-icon">📈</span>
+                    <h3>R</h3>
+                    <p>Statistics and data analysis</p>
+                    <span>Explore Course →</span>
+                </a>
+
+                <a href="course-details.html?course=dart" class="language-card">
+                    <span class="language-icon">📲</span>
+                    <h3>Dart</h3>
+                    <p>Flutter app development</p>
+                    <span>Explore Course →</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. FULL STACK -->
+        <section class="course-section" id="fullstack" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol green">🖥️</div>
+                <div>
+                    <h2>Full Stack Development</h2>
+                    <p>Combine frontend, backend and databases into complete apps.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=fullstack-html-css-js" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>Frontend Foundations</h3>
+                        <p>HTML, CSS, JavaScript and responsive interfaces.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=fullstack-react" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>React & Frontend Architecture</h3>
+                        <p>Components, state management and routing.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=fullstack-backend" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>Backend Development</h3>
+                        <p>Choose Python or Node.js and learn server-side logic.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=fullstack-database" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>Databases & APIs</h3>
+                        <p>Connect applications to databases and external services.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=fullstack-deploy" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>Deployment & Final Projects</h3>
+                        <p>Build, test and publish a complete web application.</p>
+                        <span class="skill-tag">Projects →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 6. CYBER SECURITY -->
+        <section class="course-section" id="cybersecurity" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol orange">🛡️</div>
+                <div>
+                    <h2>Cyber Security & Ethical Hacking</h2>
+                    <p>Understand digital security and practice only in authorized environments.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=networking" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>Networking Fundamentals</h3>
+                        <p>IP addresses, DNS, ports, TCP/IP and network concepts.</p>
+                        <span class="skill-tag">Foundation →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=linux" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>Linux & Command Line</h3>
+                        <p>Files, permissions, processes and system administration.</p>
+                        <span class="skill-tag">Operating Systems →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=security-basics" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>Security Fundamentals</h3>
+                        <p>Encryption, access control, threats and risk management.</p>
+                        <span class="skill-tag">Security Basics →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=ethical-hacking" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>Ethical Hacking Fundamentals</h3>
+                        <p>Testing methodology, scope, permission and safe lab practice.</p>
+                        <span class="skill-tag">Authorized Practice →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=web-security" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>Web Application Security</h3>
+                        <p>Understand common vulnerabilities and their prevention.</p>
+                        <span class="skill-tag">Web Security →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=security-projects" class="path-item">
+                    <span class="step-number">06</span>
+                    <div class="step-info">
+                        <h3>Security Labs & Reports</h3>
+                        <p>Practice in legal labs, document findings and suggest fixes.</p>
+                        <span class="skill-tag">Hands-on Projects →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 7. AI ENGINEER -->
+        <section class="course-section" id="ai" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol pink">🤖</div>
+                <div>
+                    <h2>AI Engineer & Machine Learning</h2>
+                    <p>Learn to build intelligent applications using data and models.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=ai-python" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>Python for AI</h3>
+                        <p>Programming, OOP, functions and data structures.</p>
+                        <span class="skill-tag">Foundation →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=ai-math" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>Mathematics & Statistics</h3>
+                        <p>Probability, statistics, linear algebra and calculus basics.</p>
+                        <span class="skill-tag">Mathematics →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=data-libraries" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>NumPy, Pandas & Visualization</h3>
+                        <p>Clean datasets, analyze information and create charts.</p>
+                        <span class="skill-tag">Data Skills →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=machine-learning" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>Machine Learning</h3>
+                        <p>Model training, evaluation and scikit-learn.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=deep-learning" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>Deep Learning & Neural Networks</h3>
+                        <p>Neural networks and modern deep learning techniques.</p>
+                        <span class="skill-tag">Advanced AI →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=generative-ai" class="path-item">
+                    <span class="step-number">06</span>
+                    <div class="step-info">
+                        <h3>Generative AI & LLMs</h3>
+                        <p>Model APIs, prompting, retrieval and AI evaluation.</p>
+                        <span class="skill-tag">Generative AI →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=ai-projects" class="path-item">
+                    <span class="step-number">07</span>
+                    <div class="step-info">
+                        <h3>AI Projects & Deployment</h3>
+                        <p>Build useful AI applications and deploy them responsibly.</p>
+                        <span class="skill-tag">Projects →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 8. DATA ANALYTICS -->
+        <section class="course-section" id="data-analytics" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol green">📊</div>
+                <div>
+                    <h2>Data Analytics</h2>
+                    <p>Turn raw data into useful insights and visual reports.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=excel" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>Excel & Spreadsheets</h3>
+                        <p>Formulas, functions, pivot tables and data cleaning.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=analytics-sql" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>SQL for Analytics</h3>
+                        <p>Filter, join, group and summarize datasets.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=analytics-python" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>Python, NumPy & Pandas</h3>
+                        <p>Analyze datasets and automate data workflows.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=power-bi" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>Power BI</h3>
+                        <p>Create dashboards, reports and interactive visualizations.</p>
+                        <span class="skill-tag">Visualization →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=tableau" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>Tableau</h3>
+                        <p>Explore data visually and present findings clearly.</p>
+                        <span class="skill-tag">Visualization →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=analytics-projects" class="path-item">
+                    <span class="step-number">06</span>
+                    <div class="step-info">
+                        <h3>Statistics & Analytics Projects</h3>
+                        <p>Identify trends, interpret results and present insights.</p>
+                        <span class="skill-tag">Projects →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 9. UI/UX DESIGN -->
+        <section class="course-section" id="ui-ux" data-course-section>
+            <div class="course-heading">
+                <div class="course-symbol purple">🎨</div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Design attractive, accessible and user-friendly experiences.</p>
+                </div>
+            </div>
+
+            <div class="learning-path">
+                <a href="course-details.html?course=design-principles" class="path-item">
+                    <span class="step-number">01</span>
+                    <div class="step-info">
+                        <h3>Design Principles & Color Theory</h3>
+                        <p>Typography, color, spacing, alignment and visual hierarchy.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=figma" class="path-item">
+                    <span class="step-number">02</span>
+                    <div class="step-info">
+                        <h3>Figma</h3>
+                        <p>Frames, components, auto layout and reusable design systems.</p>
+                        <span class="skill-tag">Design Tool →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=wireframes" class="path-item">
+                    <span class="step-number">03</span>
+                    <div class="step-info">
+                        <h3>Wireframes & Prototypes</h3>
+                        <p>Plan screens and create interactive prototypes.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=user-research" class="path-item">
+                    <span class="step-number">04</span>
+                    <div class="step-info">
+                        <h3>User Research & Usability Testing</h3>
+                        <p>Understand user needs and improve design through testing.</p>
+                        <span class="skill-tag">Start Learning →</span>
+                    </div>
+                </a>
+
+                <a href="course-details.html?course=design-portfolio" class="path-item">
+                    <span class="step-number">05</span>
+                    <div class="step-info">
+                        <h3>Design Portfolio Project</h3>
+                        <p>Create a complete app or website design case study.</p>
+                        <span class="skill-tag">Portfolio Project →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="course-section" id="android-development" data-course-section>
+    <div class="course-heading">
+        <div class="course-symbol green">📱</div>
+        <div>
+            <h2>Android Development</h2>
+            <p>Build modern, responsive and user-friendly Android applications.</p>
+        </div>
+    </div>
+
+    <div class="learning-path">
+        <a href="course-details.html?course=android-basics" class="path-item">
+            <span class="step-number">01</span>
+            <div class="step-info">
+                <h3>Android Development Fundamentals</h3>
+                <p>Learn Android basics, app structure, Android Studio and project setup.</p>
+                <span class="skill-tag">Start Learning →</span>
+            </div>
+        </a>
+
+        <a href="course-details.html?course=kotlin" class="path-item">
+            <span class="step-number">02</span>
+            <div class="step-info">
+                <h3>Kotlin Programming</h3>
+                <p>Learn variables, data types, functions, classes, OOP and collections.</p>
+                <span class="skill-tag">Programming →</span>
+            </div>
+        </a>
+
+        <a href="course-details.html?course=android-ui" class="path-item">
+            <span class="step-number">03</span>
+            <div class="step-info">
+                <h3>Android UI & Jetpack Compose</h3>
+                <p>Create app screens using layouts, components, navigation and Material Design.</p>
+                <span class="skill-tag">Build UI →</span>
+            </div>
+        </a>
+
+        <a href="course-details.html?course=android-database-api" class="path-item">
+            <span class="step-number">04</span>
+            <div class="step-info">
+                <h3>APIs, Database & App Architecture</h3>
+                <p>Connect APIs, store data locally and understand app architecture.</p>
+                <span class="skill-tag">Advanced Skills →</span>
+            </div>
+        </a>
+
+        <a href="course-details.html?course=android-project" class="path-item">
+            <span class="step-number">05</span>
+            <div class="step-info">
+                <h3>Android App Development Project</h3>
+                <p>Build a complete Android application and prepare it for release.</p>
+                <span class="skill-tag">Portfolio Project →</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <a href="index.html" class="footer-logo">🎓 EduPath</a>
+            <p>Learn something new every day.</p>
+            <p>© 2026 EduPath. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- COURSE SEARCH -->
+    <script>
+        const searchInput = document.getElementById("courseSearch");
+        const sections = document.querySelectorAll("[data-course-section]");
+        const searchMessage = document.getElementById("searchMessage");
+
+        searchInput.addEventListener("input", function () {
+            const query = this.value.toLowerCase().trim();
+            let visibleSections = 0;
+            let visibleTopics = 0;
+
+            sections.forEach(function (section) {
+                const topics = section.querySelectorAll(".path-item, .language-card");
+                let sectionMatches = 0;
+
+                topics.forEach(function (topic) {
+                    const matches = topic.textContent.toLowerCase().includes(query);
+                    topic.style.display = matches ? "" : "none";
+
+                    if (matches) {
+                        sectionMatches++;
+                        visibleTopics++;
+                    }
+                });
+
+                const headingMatches = section.querySelector(".course-heading")
+                    .textContent.toLowerCase().includes(query);
+
+                if (headingMatches && query !== "") {
+                    topics.forEach(function (topic) {
+                        topic.style.display = "";
+                    });
+                    sectionMatches = topics.length;
+                }
+
+                const showSection = query === "" || sectionMatches > 0;
+                section.style.display = showSection ? "" : "none";
+
+                if (showSection) {
+                    visibleSections++;
+                }
+            });
+
+            if (query === "") {
+                searchMessage.textContent = "";
+            } else if (visibleTopics === 0 && visibleSections === 0) {
+                searchMessage.textContent = "No matching courses found. Try another keyword.";
+            } else {
+                searchMessage.textContent =
+                    "Found matching results across " + visibleSections + " course section(s).";
+            }
+        });
+    </script>
+
+</body>
+</html>

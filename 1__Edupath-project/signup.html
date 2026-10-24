@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | EduPath</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="1__index.HTML" class="logo">🎓 EduPath</a>
+        <a href="1__index.HTML" class="back-link">← Back to Home</a>
+    </nav>
+
+    <!-- Signup Section -->
+    <main class="signup-section">
+
+        <!-- Left Side -->
+        <section class="signup-illustration">
+
+            <span class="tagline">LEARN • PRACTICE • GROW</span>
+
+            <h1>Start Your Journey with <span>EduPath!</span></h1>
+
+            <p>
+                Create your account, explore new skills,
+                and take your first step towards a brighter future.
+            </p>
+
+            <img
+                src="login-img.png"
+                alt="Student learning with books and laptop"
+                class="student-image"
+            >
+
+            <h3>Your future starts with learning.</h3>
+
+        </section>
+
+        <!-- Right Side Signup Form -->
+        <section class="signup-form-section">
+
+            <div class="signup-card">
+
+                <div class="form-heading">
+                    <h2>Create Account</h2>
+                    <p>Join EduPath and start learning today.</p>
+                </div>
+
+                <form action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">
+                            Confirm Password
+                        </label>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Enter password again"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <label class="terms">
+                        <input type="checkbox" name="terms" required>
+                        <span>
+                            I agree to the
+                            <a href="#">Terms of Service</a>
+                            and
+                            <a href="#">Privacy Policy</a>.
+                        </span>
+                    </label>
+
+                    <button type="submit" class="signup-btn">
+                        Create Account →
+                    </button>
+
+                </form>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <p class="login-text">
+                    Already have an account?
+                    <a href="4__login.HTML">Login</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 EduPath. Learn something new every day.</p>
+    </footer>
+
+</body>
+</html>

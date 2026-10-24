@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | EduPath</title>
+
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <a href="1__index.HTML" class="logo">🎓 EduPath</a>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html">🏠 Dashboard</a>
+            <a href="courses.html">📚 Courses</a>
+            <a href="my-learning.html">🎯 My Learning</a>
+            <a href="roadmap.html">🗺️ Roadmap</a>
+            <a href="profile.html" class="active">👤 Profile</a>
+        </nav>
+
+        <p class="menu-title">PREFERENCES</p>
+
+        <nav class="sidebar-nav">
+            <a href="settings.html">⚙️ Settings</a>
+            <a href="privacy-security.html">🔒 Privacy & Security</a>
+            <a href="#">❓ Help & Support</a>
+        </nav>
+
+        <a href="login.html" class="logout-link">↪ Logout</a>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+        <header class="topbar">
+            <div>
+                <h1>My Profile</h1>
+                <p>Manage your account and learning journey.</p>
+            </div>
+
+            <a href="dashboard.html" class="back-btn">
+                ← Dashboard
+            </a>
+        </header>
+
+        <!-- Profile Banner -->
+        <section class="profile-banner">
+
+            <div class="banner-content">
+
+                <img
+                    src="https://avatars.githubusercontent.com/u/312699934?v=4"
+                    alt="Profile photo"
+                    class="profile-photo"
+                >
+
+                <div class="profile-details">
+                    <span class="student-badge">STUDENT ACCOUNT</span>
+
+                    <h2>Suraj Kumar</h2>
+
+                    <p>suraj@example.com</p>
+
+                    <p class="member-since">🎓 Learning with EduPath</p>
+                </div>
+
+            </div>
+
+            <a href="#personal-info" class="edit-btn">
+                ✏️ Edit Profile
+            </a>
+
+        </section>
+
+        <!-- Learning Statistics -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon purple">📚</div>
+                <div>
+                    <p>Enrolled Courses</p>
+                    <h3>06</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue">🎯</div>
+                <div>
+                    <p>Completed Lessons</p>
+                    <h3>24</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">🏆</div>
+                <div>
+                    <p>Certificates</p>
+                    <h3>03</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">🔥</div>
+                <div>
+                    <p>Learning Streak</p>
+                    <h3>07 Days</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Profile Details -->
+        <section class="content-grid">
+
+            <!-- Personal Information -->
+            <div class="content-card" id="personal-info">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Personal Information</h2>
+                        <p>Your basic personal details.</p>
+                    </div>
+
+                    <a href="#personal-info" class="small-edit">
+                        Edit
+                    </a>
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <span>Full Name</span>
+                        <h4>Suraj Kumar</h4>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Email Address</span>
+                        <h4>suraj@example.com</h4>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Phone Number</span>
+                        <h4>+91 XXXXX XXXXX</h4>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Date of Birth</span>
+                        <h4>DD / MM / YYYY</h4>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Location</span>
+                        <h4>India</h4>
+                    </div>
+
+                    <div class="info-item">
+                        <span>Account Type</span>
+                        <h4>Student</h4>
+                    </div>
+
+                </div>
+
+                <div class="bio-section">
+                    <span>About Me</span>
+                    <p>
+                        I am a student passionate about technology,
+                        programming and learning new skills.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Overall Progress -->
+            <div class="content-card progress-card">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Learning Progress</h2>
+                        <p>Your overall learning activity.</p>
+                    </div>
+                </div>
+
+                <div class="progress-circle">
+                    <div class="circle-inner">
+                        <h3>68%</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <p class="progress-message">
+                    Keep going! Every lesson brings you closer
+                    to your learning goals.
+                </p>
+
+                <a href="my-learning.html" class="progress-btn">
+                    View My Learning →
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Quick Links -->
+        <section class="content-card quick-links-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Account Settings</h2>
+                    <p>Manage your account preferences.</p>
+                </div>
+            </div>
+
+            <div class="quick-links">
+
+                <a href="forgot-password.html" class="quick-link">
+                    <div class="quick-icon">🔐</div>
+
+                    <div class="quick-text">
+                        <h4>Change Password</h4>
+                        <p>Keep your account secure.</p>
+                    </div>
+
+                    <span class="arrow">›</span>
+                </a>
+
+                <a href="#" class="quick-link">
+                    <div class="quick-icon">🔔</div>
+
+                    <div class="quick-text">
+                        <h4>Notifications</h4>
+                        <p>Manage your notification preferences.</p>
+                    </div>
+
+                    <span class="arrow">›</span>
+                </a>
+
+                <a href="#" class="quick-link">
+                    <div class="quick-icon">🛡️</div>
+
+                    <div class="quick-text">
+                        <h4>Privacy & Security</h4>
+                        <p>Review your privacy preferences.</p>
+                    </div>
+
+                    <span class="arrow">›</span>
+                </a>
+
+                <a href="#" class="quick-link">
+                    <div class="quick-icon">💬</div>
+
+                    <div class="quick-text">
+                        <h4>Help & Support</h4>
+                        <p>Get help with your account.</p>
+                    </div>
+
+                    <span class="arrow">›</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 EduPath. Learn something new every day.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

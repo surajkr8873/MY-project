@@ -1,0 +1,783 @@
+
+/* =========================
+   1. RESET & GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #5145ff;
+    --primary-light: #eeecff;
+    --heading: #202b46;
+    --text: #707b92;
+    --border: #e9e9f5;
+    --background: #f7f8ff;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--heading);
+}
+
+body {
+    background: var(--background);
+    color: var(--heading);
+}
+
+.course-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================
+   2. SIDEBAR
+========================= */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    padding: 30px 18px;
+    overflow-y: auto;
+    background: var(--white);
+    border-right: 1px solid var(--border);
+}
+
+.logo {
+    margin: 0 0 40px 10px;
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.menu-title {
+    margin: 0 0 12px 12px;
+    color: #9ba3b6;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 30px;
+}
+
+.sidebar-nav a,
+.logout-link {
+    display: block;
+    padding: 13px 12px;
+    border-radius: 10px;
+    color: #69748b;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.sidebar-nav a:hover {
+    background: #f2f0ff;
+    color: var(--primary);
+    transform: translateX(3px);
+}
+
+.sidebar-nav a.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.logout-link {
+    margin-top: auto;
+    color: #df5353;
+}
+
+.logout-link:hover {
+    background: #fff0f0;
+}
+
+/* =========================
+   3. MAIN CONTENT
+========================= */
+
+.main-content {
+    min-height: 100vh;
+    margin-left: 250px;
+    padding: 32px 40px;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.topbar h1 {
+    margin-bottom: 9px;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+.topbar p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.profile-link {
+    flex-shrink: 0;
+    padding: 12px 16px;
+    border: 1px solid #dedbff;
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.profile-link:hover {
+    background: var(--primary-light);
+}
+
+/* =========================
+   4. SEARCH
+========================= */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 18px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+    color: #8992a7;
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.search-box:focus-within {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(81, 69, 255, 0.08);
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--heading);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: #9aa2b5;
+}
+
+.search-message {
+    min-height: 18px;
+    margin: 0 0 14px 3px;
+    color: var(--text);
+    font-size: 12px;
+}
+
+/* =========================
+   5. HERO BANNER
+========================= */
+
+.hero-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    min-height: 270px;
+    padding: 35px;
+    margin-bottom: 35px;
+    overflow: hidden;
+    border: 1px solid #e6e3ff;
+    border-radius: 20px;
+    background: linear-gradient(115deg, #ffffff 0%, #f0eeff 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-bottom: 17px;
+    border-radius: 30px;
+    background: #e9e6ff;
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.hero-banner h2 {
+    margin-bottom: 13px;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.35;
+}
+
+.hero-banner h2 span {
+    color: var(--primary);
+}
+
+.hero-banner p {
+    max-width: 550px;
+    margin-bottom: 23px;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 13px 18px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.25s ease,
+                transform 0.25s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    background: #3e32e8;
+}
+
+/* Decorative illustration made with CSS */
+
+.hero-art {
+    position: relative;
+    flex: 0 0 190px;
+    height: 190px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #dfdcff 0%, #f0eeff 68%, transparent 70%);
+}
+
+.art-circle {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(81, 69, 255, 0.12);
+    font-size: 48px;
+    transform: rotate(-5deg);
+}
+
+.art-card {
+    position: absolute;
+    z-index: 2;
+    padding: 10px 12px;
+    border: 1px solid #eeeaff;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #5145ff;
+    font-size: 11px;
+    font-weight: 700;
+    box-shadow: 0 7px 20px rgba(40, 40, 100, 0.08);
+}
+
+.art-card-one {
+    top: 12px;
+    right: -8px;
+}
+
+.art-card-two {
+    bottom: 22px;
+    left: -20px;
+}
+
+.art-card-three {
+    right: -12px;
+    bottom: 0;
+}
+
+/* =========================
+   6. SECTION INTRO
+========================= */
+
+.section-intro {
+    margin: 0 0 22px;
+}
+
+.section-intro h2 {
+    margin-bottom: 8px;
+    font-size: 23px;
+}
+
+.section-intro p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================
+   7. COURSE SECTIONS
+========================= */
+
+.course-section {
+    padding: 25px;
+    margin-bottom: 25px;
+    scroll-margin-top: 25px;
+    border: 1px solid #ecebfa;
+    border-radius: 17px;
+    background: var(--white);
+    box-shadow: 0 5px 18px rgba(30, 42, 70, 0.025);
+}
+
+.course-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 22px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #f0eff7;
+}
+
+.course-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    font-size: 23px;
+}
+
+.course-symbol.purple {
+    background: #eeebff;
+}
+
+.course-symbol.blue {
+    background: #e5f2ff;
+}
+
+.course-symbol.green {
+    background: #e5f8ec;
+}
+
+.course-symbol.orange {
+    background: #fff0df;
+}
+
+.course-symbol.pink {
+    background: #ffe8f1;
+}
+
+.course-heading h2 {
+    margin-bottom: 7px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.course-heading p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =========================
+   8. LEARNING PATH
+========================= */
+
+.learning-path {
+    position: relative;
+    padding: 12px 0 0 5px;
+}
+
+.learning-path::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 35px;
+    left: 24px;
+    width: 2px;
+    background: #e5e2ff;
+}
+
+.path-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 17px 12px;
+    border-radius: 12px;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.25s ease,
+                transform 0.25s ease;
+}
+
+.path-item:hover {
+    transform: translateX(3px);
+    background: #faf9ff;
+}
+
+.path-item:focus-visible,
+.language-card:focus-visible,
+.profile-link:focus-visible,
+.primary-btn:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.step-number {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e3dfff;
+    border-radius: 50%;
+    background: #f0eeff;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.step-info {
+    min-width: 0;
+    flex: 1;
+    padding-top: 2px;
+}
+
+.step-info h3 {
+    margin-bottom: 7px;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+.path-item:hover .step-info h3 {
+    color: var(--primary);
+}
+
+.step-info p {
+    margin-bottom: 10px;
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #f0eeff;
+    color: var(--primary);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* =========================
+   9. PROGRAMMING LANGUAGE GRID
+========================= */
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.language-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: #ffffff;
+    color: var(--heading);
+    text-decoration: none;
+    transition: transform 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.language-card:hover {
+    transform: translateY(-4px);
+    border-color: #c9c3ff;
+    box-shadow: 0 10px 24px rgba(81, 69, 255, 0.09);
+}
+
+.language-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
+    border-radius: 13px;
+    background: #f0eeff;
+    font-size: 23px;
+}
+
+.language-card h3 {
+    font-size: 15px;
+}
+
+.language-card p {
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.language-card > span:last-child {
+    margin-top: 3px;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* =========================
+   10. FOOTER
+========================= */
+
+.footer {
+    padding: 30px 15px;
+    text-align: center;
+    color: #8992a7;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* =========================
+   11. TABLET
+========================= */
+
+@media (max-width: 1100px) {
+    .sidebar {
+        width: 220px;
+    }
+
+    .main-content {
+        margin-left: 220px;
+        padding: 28px 25px;
+    }
+
+    .hero-art {
+        flex-basis: 150px;
+        transform: scale(0.85);
+    }
+
+    .language-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   12. MOBILE
+========================= */
+
+@media (max-width: 700px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        overflow: visible;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+        display: inline-block;
+        margin: 0 0 22px;
+    }
+
+    .menu-title {
+        margin-top: 8px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+
+    .sidebar-nav a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .logout-link {
+        margin-top: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 22px 15px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .topbar h1 {
+        font-size: 27px;
+    }
+
+    .profile-link {
+        align-self: flex-start;
+    }
+
+    .hero-banner {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .hero-art {
+        display: none;
+    }
+
+    .hero-banner h2 {
+        font-size: 25px;
+    }
+
+    .section-intro h2 {
+        font-size: 21px;
+    }
+
+    .course-section {
+        padding: 18px 12px;
+    }
+
+    .course-heading {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .course-heading h2 {
+        font-size: 18px;
+    }
+
+    .course-heading p {
+        font-size: 12px;
+    }
+
+    .course-symbol {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+
+    .path-item {
+        gap: 13px;
+        padding: 15px 5px;
+    }
+
+    .learning-path::before {
+        left: 24px;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .step-info h3 {
+        font-size: 14px;
+    }
+
+    .step-info p {
+        font-size: 12px;
+    }
+
+    .language-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .language-card {
+        padding: 17px;
+    }
+}
+
+/* =========================
+   13. REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | EduPath</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- SIDEBAR: SAME AS COURSES.HTML -->
+
+    <aside class="sidebar">
+
+        <a href="1__index.HTML" class="logo">🎓 EduPath</a>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="active">🏠 Dashboard</a>
+            <a href="courses.html">📚 Courses</a>
+            <a href="my-learning.html">🎯 My Learning</a>
+            <a href="roadmap.html">🗺️ Roadmap</a>
+            <a href="profile.html">👤 Profile</a>
+        </nav>
+
+        <p class="menu-title">PREFERENCES</p>
+
+        <nav class="sidebar-nav">
+            <a href="settings.html">⚙️ Settings</a>
+            <a href="privacy-security.html">🔒 Privacy &amp; Security</a>
+            <a href="help.html">❓ Help &amp; Support</a>
+        </nav>
+
+        <a href="login.html" class="logout-link">↪ Logout</a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                <span>🏠</span>
+                <span>Dashboard</span>
+            </div>
+
+            <div class="topbar-right">
+
+                <form action="courses.html" class="search-box">
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        name="search"
+                        placeholder="Search courses, topics, or anything..."
+                        aria-label="Search courses"
+                    >
+
+                    <button type="submit">Search</button>
+                </form>
+
+                <a href="notifications.html"
+                   class="notification"
+                   aria-label="Notifications">♧</a>
+
+                <a href="profile.html" class="profile-mini">
+                    <span class="avatar">S</span>
+
+                    <span class="profile-name">Suraj Kumar</span>
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE INTRODUCTION -->
+
+        <section class="welcome-section">
+
+            <div>
+                <span class="eyebrow">YOUR LEARNING SPACE</span>
+
+                <h1>Welcome back, Suraj!</h1>
+
+                <p>
+                    Every small step brings you closer to your goals.
+                </p>
+            </div>
+
+            <a href="profile.html" class="profile-button">
+                👤 My Profile
+            </a>
+
+        </section>
+
+
+        <!-- HERO BANNER -->
+
+        <section class="hero-banner">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    LEARN · PRACTICE · GROW
+                </span>
+
+                <h2>
+                    Learn today.<br>
+                    <span>Lead tomorrow.</span>
+                </h2>
+
+                <p>
+                    Build new skills, explore career paths and create
+                    a better future with EduPath.
+                </p>
+
+                <a href="my-learning.html" class="primary-btn">
+                    Continue Learning <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <!-- Keep your existing student illustration in this folder -->
+                <img
+                    src="login-img.png"
+                    alt="Student learning with books and laptop"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+
+            <article class="stat-card">
+                <div class="stat-icon purple">📚</div>
+
+                <div>
+                    <p>Enrolled Courses</p>
+                    <h2>04</h2>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon green">✓</div>
+
+                <div>
+                    <p>Lessons Completed</p>
+                    <h2>12</h2>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon orange">◷</div>
+
+                <div>
+                    <p>Learning Time</p>
+                    <h2>18 hrs</h2>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon blue">▥</div>
+
+                <div>
+                    <p>Average Progress</p>
+                    <h2>68%</h2>
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- DASHBOARD CONTENT -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- LEFT COLUMN -->
+
+            <div class="left-column">
+
+                <!-- CONTINUE LEARNING -->
+
+                <section class="content-card">
+
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">KEEP GOING</span>
+                            <h2>Continue Learning</h2>
+                        </div>
+
+                        <a href="my-learning.html" class="view-link">
+                            View All Courses →
+                        </a>
+                    </div>
+
+
+                    <!-- PYTHON COURSE -->
+
+                    <article class="course-row">
+
+                        <div class="course-thumbnail python">
+                            <span>Py</span>
+                            <small>PYTHON</small>
+                        </div>
+
+                        <div class="course-info">
+
+                            <h3>Python for Beginners</h3>
+
+                            <p>
+                                Learn Python from basics to advanced concepts.
+                            </p>
+
+                            <div class="progress-info">
+                                <div class="progress-track">
+                                    <div class="progress-fill"
+                                         style="width: 75%"></div>
+                                </div>
+
+                                <strong>75%</strong>
+                            </div>
+
+                        </div>
+
+                        <a href="course-details.html?course=python"
+                           class="continue-btn">
+                            Continue
+                        </a>
+
+                    </article>
+
+
+                    <!-- HTML AND CSS COURSE -->
+
+                    <article class="course-row">
+
+                        <div class="course-thumbnail web">
+                            <span>&lt;/&gt;</span>
+                            <small>WEB DESIGN</small>
+                        </div>
+
+                        <div class="course-info">
+
+                            <h3>HTML &amp; CSS Masterclass</h3>
+
+                            <p>
+                                Build responsive websites with modern
+                                web technologies.
+                            </p>
+
+                            <div class="progress-info">
+                                <div class="progress-track">
+                                    <div class="progress-fill web-fill"
+                                         style="width: 45%"></div>
+                                </div>
+
+                                <strong>45%</strong>
+                            </div>
+
+                        </div>
+
+                        <a href="course-details.html?course=html"
+                           class="continue-btn">
+                            Continue
+                        </a>
+
+                    </article>
+
+
+                    <!-- WEEKLY ACTIVITY -->
+
+                    <section class="weekly-activity">
+
+                        <div class="activity-heading">
+                            <div>
+                                <span class="activity-icon">▦</span>
+                                <h3>Weekly Activity</h3>
+                            </div>
+
+                            <span class="week-label">Last 7 days</span>
+                        </div>
+
+                        <div class="chart">
+
+                            <div class="chart-column">
+                                <div class="chart-bar" style="height: 40%"></div>
+                                <span>Mon</span>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-bar" style="height: 70%"></div>
+                                <span>Tue</span>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-bar" style="height: 50%"></div>
+                                <span>Wed</span>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-bar" style="height: 90%"></div>
+                                <span>Thu</span>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-bar" style="height: 55%"></div>
+                                <span>Fri</span>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-bar today-bar"
+                                     style="height: 35%"></div>
+                                <span>Sat</span>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-bar" style="height: 65%"></div>
+                                <span>Sun</span>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+            </div>
+
+
+            <!-- RIGHT COLUMN -->
+
+            <aside class="right-column">
+
+                <!-- DAILY GOAL -->
+
+                <section class="content-card goal-card">
+
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">STAY CONSISTENT</span>
+                            <h2>Daily Goal</h2>
+                        </div>
+
+                        <span class="goal-star">✦</span>
+                    </div>
+
+                    <div class="goal-circle">
+                        <div class="goal-inner">
+                            <h3>60%</h3>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <h3 class="goal-title">
+                        You're making progress!
+                    </h3>
+
+                    <p class="goal-description">
+                        Keep learning every day and move closer
+                        to your goals.
+                    </p>
+
+                    <div class="goal-details">
+                        <span>60 of 100 minutes</span>
+                    </div>
+
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+
+                </section>
+
+
+                <!-- QUICK ACCESS -->
+
+                <section class="content-card quick-card">
+
+                    <div class="section-heading">
+                        <div>
+                            <span class="eyebrow">YOUR SHORTCUTS</span>
+                            <h2>Quick Access</h2>
+                        </div>
+                    </div>
+
+                    <a href="courses.html" class="quick-link">
+                        <span class="quick-icon purple">📚</span>
+
+                        <span class="quick-text">
+                            <strong>All Courses</strong>
+                            <small>Explore new skills</small>
+                        </span>
+
+                        <span class="quick-arrow">›</span>
+                    </a>
+
+                    <a href="my-learning.html" class="quick-link">
+                        <span class="quick-icon green">▶</span>
+
+                        <span class="quick-text">
+                            <strong>My Learning</strong>
+                            <small>Resume your lessons</small>
+                        </span>
+
+                        <span class="quick-arrow">›</span>
+                    </a>
+
+                    <a href="roadmap.html" class="quick-link">
+                        <span class="quick-icon orange">🗺️</span>
+
+                        <span class="quick-text">
+                            <strong>Learning Roadmap</strong>
+                            <small>Plan your next steps</small>
+                        </span>
+
+                        <span class="quick-arrow">›</span>
+                    </a>
+
+                    <a href="profile.html" class="quick-link">
+                        <span class="quick-icon blue">👤</span>
+
+                        <span class="quick-text">
+                            <strong>My Profile</strong>
+                            <small>View your account</small>
+                        </span>
+
+                        <span class="quick-arrow">›</span>
+                    </a>
+
+                </section>
+
+
+                <!-- MOTIVATIONAL CARD -->
+
+                <section class="quote-card">
+
+                    <span class="quote-mark">“</span>
+
+                    <p>
+                        Small progress each day adds up to big results.
+                    </p>
+
+                    <span class="quote-author">— Your EduPath Journey</span>
+
+                    <div class="quote-decoration">✦</div>
+
+                </section>
+
+            </aside>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <p>© 2026 EduPath. Learn something new every day.</p>
+
+            <div>
+                <a href="help.html">Help Center</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
